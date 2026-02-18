@@ -1,11 +1,17 @@
-import Upload from "./Upload";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Layout from "./components/Layout";
+import Home from "./pages/Home";
+import Upload from "./pages/Upload";
 
-function App() {
+export default function App() {
   return (
-    <div>
-      <Upload />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route element={<Layout />}>
+          <Route path="/" element={<Home />} />
+          <Route path="/upload" element={<Upload />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
-
-export default App;
