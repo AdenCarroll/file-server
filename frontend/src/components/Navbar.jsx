@@ -6,7 +6,7 @@ export default function AppNavbar() {
     <Navbar color="dark" dark expand="md">
       <Container fluid>
         <NavbarBrand tag={RouterNavLink} to="/">
-          <span className="lead">Aden's Legendary File Server Service</span>
+          <span className="lead">Aden's Legendary File Server Service LLC.com//\\file</span>
         </NavbarBrand>
 
         <Nav className="ms-auto" navbar>
